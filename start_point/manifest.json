@@ -1,0 +1,24 @@
+{
+  "display_name": "Rust 1.94.0, proptest 1.11.0",
+  "language": [
+    "Rust",
+    "1.94.0"
+  ],
+  "test_framework": [
+    "proptest",
+    "1.11.0"
+  ],
+  "image_name": "ghcr.io/cyber-dojo-languages/rust_proptest:4335ea9",
+  "visible_filenames": [
+    "src/lib.rs",
+    "tests/hiker_tests.rs",
+    "Cargo.toml",
+    "cyber-dojo.sh"
+  ],
+  "rag_lambda": "red_amber_green.rb",
+  "filename_extension": [
+    ".rs"
+  ],
+  "max_seconds": 10,
+  "tab_size": 4
+}

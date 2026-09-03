@@ -1,0 +1,15 @@
+[package]
+name = "hiker"
+version = "0.1.0"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dev-dependencies]
+proptest = "1.11.0"
+
+[features]
+strict = [] # Treat warnings as a build error.
+
+[profile.test]
+debug = 0 # Debug info is most of a test binary's size, and none of it is read here.
