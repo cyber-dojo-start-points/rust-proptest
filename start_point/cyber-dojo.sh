@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # --------------------------------------------------------------
-# Every text file here is returned to your kata after a [test] press. cargo
-# writes Cargo.lock itself, from Cargo.toml, on every press, so an edit you
+# Every text file here is returned to your kata after a test run. cargo
+# writes Cargo.lock itself, from Cargo.toml, on every run, so an edit you
 # made to it would be overwritten by the next one; it is removed here rather
 # than handed back to you.
 function cyber_dojo_exit()
@@ -20,15 +20,15 @@ export PATH=/usr/local/cargo/bin:${PATH}
 # say so plainly rather than reaching for a network that is not there.
 export CARGO_NET_OFFLINE=true
 # proptest and everything below it, compiled once when this container's image
-# was built. Reusing that is what makes a press quick; without it every press
-# would compile proptest from source.
+# was built. Reusing that is what makes a test run quick; without it every
+# run would compile proptest from source.
 export CARGO_TARGET_DIR=/rust/target-cache
 # Incremental compilation saves state for a later build to read back. Every
-# press gets a new container, so there is never a later build here to read it.
+# test run gets a new container, so there is never a later build to read it.
 export CARGO_INCREMENTAL=0
 # proptest saves a failing value to a file so that a later run can try it
-# first. That file would arrive in your kata, and the press after it starts in
-# a new container which cannot see it, so there is nothing for it to do here.
+# first. That file would arrive in your kata, and the run after it starts in a
+# new container which cannot see it, so there is nothing for it to do here.
 export PROPTEST_DISABLE_FAILURE_PERSISTENCE=1
 
 # --------------------------------------------------------------
@@ -86,7 +86,7 @@ for file in **/*.rs; do
 done
 
 # None of this runs when cargo compiles every file, which is the ordinary
-# case, so an ordinary press pays nothing for it.
+# case, so an ordinary test run pays nothing for it.
 if [ ${#UNSEEN_FILES[@]} -gt 0 ]; then
   mkdir -p /tmp/check
 
