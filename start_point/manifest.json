@@ -11,7 +11,10 @@
   "image_name": "ghcr.io/cyber-dojo-languages/rust_proptest:4335ea9",
   "visible_filenames": [
     "src/lib.rs",
-    "tests/hiker_tests.rs",
+    "src/answer.rs",
+    "src/digits.rs",
+    "tests/answer_tests.rs",
+    "tests/digits_in_base_tests.rs",
     "Cargo.toml",
     "cyber-dojo.sh"
   ],

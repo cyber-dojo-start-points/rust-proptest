@@ -104,9 +104,15 @@ if [ ${#UNSEEN_FILES[@]} -gt 0 ]; then
   # can use it the same way a test file in tests/ does. It is compiled here
   # rather than taken from what cargo built, so that the check sees your
   # library as you have just written it.
+  # The crate name comes from the package name your Cargo.toml gives, so
+  # renaming the package renames it here too. A hyphen in a package name
+  # becomes an underscore in the crate name.
+  CRATE_NAME=$(sed -n 's/^name *= *"\(.*\)"/\1/p' Cargo.toml | head -1)
+  CRATE_NAME=${CRATE_NAME//-/_}
+
   if [ -f src/lib.rs ]; then
-    rustc "${RUSTC_OPTS[@]}" --crate-type lib --crate-name hiker src/lib.rs || exit 1
-    RUSTC_OPTS+=(--extern hiker=/tmp/check/libhiker.rmeta)
+    rustc "${RUSTC_OPTS[@]}" --crate-type lib --crate-name "${CRATE_NAME}" src/lib.rs || exit 1
+    RUSTC_OPTS+=(--extern "${CRATE_NAME}=/tmp/check/lib${CRATE_NAME}.rmeta")
   fi
 
   # --test is what makes rustc compile the #[test] functions in a file.
@@ -121,7 +127,8 @@ fi
 # --------------------------------------------------------------
 # proptest runs each test many times over, with values it chooses itself, and
 # when one of them fails it shrinks that value to the smallest which still
-# fails and reports that one. tests/hiker_tests.rs shows the shape to copy.
+# fails and reports that one. tests/digits_in_base_tests.rs shows the shape to
+# copy.
 CARGO_TEST_OPTS=()
 CARGO_TEST_OPTS+=(--features strict)  # treat a compiler warning as an error
 
