@@ -1,0 +1,10 @@
+{
+  "match_counts": {
+    "^error: this file contains an unclosed delimiter$": 1,
+    "^ +--> src/checksum\\.rs:[0-9]+:[0-9]+$": 1,
+    "^error: aborting due to 1 previous error$": 1,
+    "^ +Compiling hiker ": 0,
+    "^test result: ": 0,
+    "^running ": 0
+  }
+}

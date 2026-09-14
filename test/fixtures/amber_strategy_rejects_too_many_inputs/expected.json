@@ -1,0 +1,13 @@
+{
+  "truncated": false,
+  "match_counts": {
+    "^test the_digits_rebuild_the_number \\.\\.\\. FAILED$": 1,
+    "^Test aborted: Too many global rejects$": 1,
+    "global rejects: 1024$": 1,
+    "1024 times at tests/digits_in_base_tests\\.rs:[0-9]+:[0-9]+: n % 100_000 == 99_999$": 1,
+    "assertion": 0,
+    "minimal failing input": 0,
+    "^test result: FAILED\\. 0 passed; 1 failed; 0 ignored; ": 1,
+    "^test result: ok\\. ": 2
+  }
+}

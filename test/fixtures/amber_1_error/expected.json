@@ -1,0 +1,10 @@
+{
+  "match_counts": {
+    "^error\\[E0425\\]: cannot find function `multiplier` in this scope$": 1,
+    "^ +--> src/answer\\.rs:[0-9]+:[0-9]+$": 1,
+    "^error: could not compile `hiker` \\(lib\\) due to 1 previous error$": 1,
+    "^error: could not compile `hiker` \\(lib test\\) due to 1 previous error$": 1,
+    "^test result: ": 0,
+    "^running ": 0
+  }
+}

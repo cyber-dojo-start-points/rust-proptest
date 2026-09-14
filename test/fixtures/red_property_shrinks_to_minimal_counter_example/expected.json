@@ -1,0 +1,11 @@
+{
+  "truncated": false,
+  "match_counts": {
+    "^test every_number_is_at_most_two_digits_long \\.\\.\\. FAILED$": 1,
+    "^Test failed: assertion failed: digits_in_base\\(n, 10\\)\\.len\\(\\) <= 2 at tests/digits_in_base_tests\\.rs:[0-9]+\\.$": 1,
+    "^minimal failing input: n = 100$": 1,
+    "^test result: FAILED\\. 0 passed; 1 failed; 0 ignored; ": 1,
+    "^test result: ok\\. 2 passed; 0 failed; 0 ignored; ": 1,
+    "^test result: ok\\. ": 2
+  }
+}

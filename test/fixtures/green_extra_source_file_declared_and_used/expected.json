@@ -1,0 +1,10 @@
+{
+  "max_output_lines": 37,
+  "match_counts": {
+    "^running 3 tests$": 1,
+    "^test the_digits_of_the_answer_add_up_to_six \\.\\.\\. ok$": 1,
+    "^test result: ok\\. 3 passed; 0 failed; 0 ignored; ": 1,
+    "^test result: ok\\. ": 4,
+    "^test result: FAILED": 0
+  }
+}

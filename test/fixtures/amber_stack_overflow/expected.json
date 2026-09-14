@@ -1,0 +1,11 @@
+{
+  "match_counts": {
+    "^running 2 tests$": 1,
+    "has overflowed its stack$": 1,
+    "^fatal runtime error: stack overflow, aborting$": 1,
+    "^error: test failed, to rerun pass `--test answer_tests`$": 1,
+    "^test result: ": 1,
+    "^test result: ok\\. 0 passed; 0 failed; 0 ignored; ": 1,
+    "^test result: FAILED": 0
+  }
+}

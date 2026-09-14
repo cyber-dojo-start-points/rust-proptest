@@ -1,0 +1,12 @@
+{
+  "truncated": false,
+  "match_counts": {
+    "^test src/answer\\.rs - answer::answer \\(line [0-9]+\\) \\.\\.\\. FAILED$": 1,
+    "^assertion `left == right` failed$": 1,
+    "^  left: 43$": 1,
+    "^ right: 42$": 1,
+    "^error: doctest failed, to rerun pass `--doc`$": 1,
+    "^test result: FAILED\\. 0 passed; 1 failed; 0 ignored; ": 1,
+    "^test result: ok\\. ": 3
+  }
+}

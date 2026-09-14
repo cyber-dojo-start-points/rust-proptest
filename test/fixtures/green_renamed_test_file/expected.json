@@ -1,0 +1,10 @@
+{
+  "max_output_lines": 36,
+  "match_counts": {
+    "Running tests/property_tests\\.rs ": 1,
+    "digits_in_base_tests": 0,
+    "^test the_digits_rebuild_the_number \\.\\.\\. ok$": 1,
+    "^test result: ok\\. ": 4,
+    "^test result: FAILED": 0
+  }
+}

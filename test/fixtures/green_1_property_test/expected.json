@@ -1,0 +1,13 @@
+{
+  "max_output_lines": 28,
+  "truncated": false,
+  "match_counts": {
+    "^running 0 tests$": 2,
+    "^running 1 test$": 1,
+    "^test the_digits_rebuild_the_number \\.\\.\\. ok$": 1,
+    "answer_tests": 0,
+    "^test result: ok\\. ": 3,
+    "^test result: ok\\. 1 passed; 0 failed; 0 ignored; ": 1,
+    "^test result: FAILED": 0
+  }
+}

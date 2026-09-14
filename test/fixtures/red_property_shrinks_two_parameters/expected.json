@@ -1,0 +1,11 @@
+{
+  "truncated": false,
+  "match_counts": {
+    "^test the_digits_rebuild_the_number \\.\\.\\. FAILED$": 1,
+    "^Test failed: assertion failed: `\\(left == right\\)`": 1,
+    "^minimal failing input: n = [0-9]+, base = [0-9]+$": 1,
+    "^test result: FAILED\\. 0 passed; 1 failed; 0 ignored; ": 1,
+    "^test result: ok\\. 2 passed; 0 failed; 0 ignored; ": 1,
+    "^test result: ok\\. ": 2
+  }
+}

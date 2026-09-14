@@ -1,0 +1,11 @@
+{
+  "max_output_lines": 36,
+  "match_counts": {
+    "the_answer_is_two_digits": 0,
+    "^checking the size of the answer$": 0,
+    "sums": 0,
+    "^test result: ok\\. ": 4,
+    "^test result: ok\\. 2 passed; 0 failed; 0 ignored; ": 1,
+    "^test result: FAILED": 0
+  }
+}

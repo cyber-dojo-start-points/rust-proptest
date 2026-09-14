@@ -1,0 +1,13 @@
+{
+  "truncated": false,
+  "match_counts": {
+    "^test each_digit_of_the_answer_halves_the_one_before \\.\\.\\. ignored$": 1,
+    "^test every_digit_of_the_answer_is_even \\.\\.\\. ignored$": 1,
+    "^test the_digits_rebuild_the_number \\.\\.\\. ignored$": 1,
+    "\\.\\.\\. ok$": 0,
+    "^test result: ok\\. ": 4,
+    "^test result: ok\\. 0 passed; 0 failed; 2 ignored; ": 1,
+    "^test result: ok\\. 0 passed; 0 failed; 1 ignored; ": 1,
+    "^test result: FAILED": 0
+  }
+}

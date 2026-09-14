@@ -1,0 +1,11 @@
+{
+  "max_output_lines": 37,
+  "match_counts": {
+    "^running 0 tests$": 1,
+    "^running 1 test$": 2,
+    "^test tests::the_answer_is_two_digits \\.\\.\\. ok$": 1,
+    "^test result: ok\\. ": 4,
+    "^test result: ok\\. 1 passed; 0 failed; 0 ignored; ": 2,
+    "^test result: FAILED": 0
+  }
+}

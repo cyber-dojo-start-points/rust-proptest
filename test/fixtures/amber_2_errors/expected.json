@@ -1,0 +1,10 @@
+{
+  "match_counts": {
+    "^error\\[E0425\\]: cannot find function `multiplier` in this scope$": 1,
+    "^error\\[E0425\\]: cannot find function `digit_sum` in this scope$": 1,
+    "^error: could not compile `hiker` \\(lib\\) due to 2 previous errors$": 1,
+    "^error: could not compile `hiker` \\(lib test\\) due to 2 previous errors$": 1,
+    "^test result: ": 0,
+    "^running ": 0
+  }
+}
