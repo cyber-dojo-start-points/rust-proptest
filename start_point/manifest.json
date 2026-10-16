@@ -1,14 +1,14 @@
 {
-  "display_name": "Rust 1.98, proptest 1.11",
+  "display_name": "Rust 1.99.1, proptest 1.12.0",
   "language": [
     "Rust",
-    "1.98"
+    "1.99.1"
   ],
   "test_framework": [
     "proptest",
-    "1.11"
+    "1.12.0"
   ],
-  "image_name": "ghcr.io/cyber-dojo-languages/rust_proptest:d3fad5b",
+  "image_name": "ghcr.io/cyber-dojo-languages/rust_proptest:c7d78bc@sha256:4da8364293362ff48e863a160a783e8cde8f4426732bb0b533a478ea1cfb9a36",
   "visible_filenames": [
     "src/lib.rs",
     "src/answer.rs",
